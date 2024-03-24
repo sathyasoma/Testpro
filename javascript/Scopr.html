@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+   var name="sathya keerthi"; //global variable
+
+    function Welcome()
+    {
+     var greet="good morning"; //local variable
+     document.write("just enter inside "+"<br>")
+      document.write(greet+"<br>");
+      document.write("just outside from function"+"<br>")
+      document.write("<br>");
+      document.write("local scope :"+name +"<br>");
+    }
+
+    Welcome();
+    document.write("global scope :"+name);
+    document.write(greet); //out side the function
+    </script>
+</body>
+</html>

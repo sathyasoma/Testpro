@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //if condition 
+
+      if(3<4){
+        document.write("condition is satisfied"+"<br>");
+      }
+      else{
+        document.write("condition is not satisfied"+"<br>");
+      }
+      document.write("out of the if block"+"<br>");
+
+
+      let now= new Date();
+      let dayOfWeek=now.getDay();
+
+      if(dayOfWeek==1){
+        document.write("have a nice mndy"+"<br>");
+      }
+      else if(dayOfWeek==2){
+        document.write("have a nice tusdy"+"<br>");
+      }
+      else if(dayOfWeek==3){
+        document.write("have a nice weddy"+"<br>");
+      }
+      else if(dayOfWeek==4){
+        document.write("have a nice thus"+"<br>");
+      }
+      else if(dayOfWeek==5){
+        document.write("have a nice fri"+"<br>");
+      }
+      else{
+        document.write("its satrdy");
+      }
+
+      //ternary operator ?
+
+   let age=1;
+
+   let userType= age<18 ?'child':'Adult';
+
+   document.write("my age is : "+userType);
+
+
+  let d= new Date();
+
+  switch(d.getDay()) {
+    case 0:
+        alert("Today is sunday");
+        case 1:
+        alert("Today is Mndy");
+        case 2:
+        alert("Today is Tudy");
+        case 3:
+        alert("Today is Weddy");
+        break;
+        case 4:
+        alert("Today is Thusdy");
+        break;
+        case 5:
+        alert("Today is Fryddy");
+        break;
+        case 6:
+        alert("Today is Satady");
+        break;
+        default:
+            alert("no info available!!!!")
+
+  }
+
+
+
+
+    </script>
+</body>
+</html>

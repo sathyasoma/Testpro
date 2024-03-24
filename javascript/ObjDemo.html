@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+let person= {
+     
+      name:'sathya',
+      age:29,
+      salary:1888,
+      address:"hyd"
+         
+}
+
+document.write(person+"<br>");
+
+//dot notation
+document.write(person.name+"<br>");
+document.write(person.age+"<br>");
+document.write(person.address+"<br>");
+document.write(person.salary+"<br>");
+
+//array notation we can print the vaues 
+
+document.write(person["name"]+"<br>");
+document.write(person["age"]+"<br>");
+document.write(person["address"]+"<br>");
+document.write(person["salary"]+"<br>");
+
+
+
+let animal ={
+
+      anname:"lion",
+      type:"wild",
+      display:function(){
+        document.write(this.anname+""+this.type);
+      }
+}
+
+document.write(animal+"<br>");
+
+document.write(animal.anname+"<br>");
+document.write(animal.type+"<br>");
+
+animal.display();
+animal["display"]();
+
+
+for(p in person){
+    document.write(person[p]+"<br>");
+}
+
+person.name="soma";
+
+document.write(person.name+"<br>");
+delete person.salary;
+
+document.write(person.salary+"<br>");
+
+
+let cities={
+
+    names:"hyd",
+    loc:"lb nagr",
+    distance:34
+}
+
+let mydetails= cities;
+
+mydetails.loc="kbhp";
+
+document.write(mydetails.loc+"<br>");
+
+    </script>
+   
+</body>
+</html>

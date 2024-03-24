@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Default values Function : ES6</h2>
+    
+    <script>
+
+    // function Greet(name="sathya")
+    // {
+    //     document.write("hello good morning :"+name +"<br>")
+    // }
+
+  //  Greet(); //default value
+   // Greet("keerthi"); //overrided default value
+
+
+    //other way to execute default 
+//normal function with return type
+  function sayHello(sam)
+  {
+    return "my name is " + sam +"<br>";
+  }
+
+  document.write(sayHello());
+  document.write(sayHello("soma"));
+  
+//normal function with return type
+
+  function Add(x1,x2)
+  {
+    let total = x1+x2;
+    return total;
+  }
+
+  alert("addition of two numbers is ;"+Add(23,23))
+  alert("addition of two numbers is ;"+Add(20,23))
+    </script>
+</body>
+</html>

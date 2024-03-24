@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    var fruits=["mango","apple","orange","banana"];
+
+    document.write(fruits.length+"<br>");
+
+   document.write(fruits+"<br>");
+
+  for(var i=0; i<fruits.length; i++){
+    document.write(fruits[i]+"<br>");
+  }
+
+//for of loop  
+
+for(hel of fruits){
+    document.write(hel+"<br>");
+}
+//for in loop :
+
+   for(wel in fruits){
+    document.write(fruits[wel]+"<br>");
+   }
+
+// insert one more fruit into the array: at end 
+document.write(fruits+"<br>");
+var add=fruits.push("grapes");
+document.write(add+"<br>");
+document.write(fruits+"<br>");
+
+// insert one more fruit into the array :at front side
+document.write(fruits+"<br>");
+var add1=fruits.unshift("pineapple");
+document.write(add1+"<br>");
+document.write(fruits+"<br>");
+
+
+// remove one  fruit from the array :start 
+document.write(fruits+"<br>");
+var add2=fruits.shift();
+document.write(add2+"<br>");
+document.write(fruits+"<br>");
+
+// remove one  fruit from the array :end 
+document.write(fruits+"<br>");
+var add3=fruits.pop();
+document.write(add3+"<br>");
+document.write(fruits+"<br>");
+
+//splice method 
+
+ var removed= fruits.splice(1,2)
+ document.write(removed+"<br>");
+ document.write(fruits+"<br>");
+
+ //splice method remove, add values
+
+ var removed1= fruits.splice(0,1,"sathya","soma","prakash")
+ document.write(removed1+"<br>");
+ document.write(fruits+"<br>");
+
+//given array extract from values from the given array 
+
+var extracted= fruits.slice(1,3);
+document.write(extracted+"<br>");
+//document.write(fruits+"<br>");
+
+var cities=["nlg","hyd","kdd","vh"];
+
+var animals=["lion","mammal","dog","cat"]
+
+var result=cities+animals;
+//document.write(result+"<br>");
+
+var result1=cities.concat(animals);
+document.write(result1+"<br>");
+
+var mix=["sathya",1,4,7,3,true,45,"soma"];
+document.write(mix+"<br>");
+
+
+//find the hiegst number
+var result3=mix.find(
+    function(ele){
+        return ele>4;
+    }
+)
+//index number highst
+document.write(result3+"<br>");
+
+var result4=mix.findIndex(
+    function(ele){
+        return ele>4;
+    }
+)
+
+document.write(result4+"<br>");
+
+//filter thevaues 
+
+
+
+var result5=mix.filter(
+    function(ele){
+        return ele>4;
+    }
+)
+
+document.write(result5+"<br>");
+
+document.write(cities+"<br>")
+var sorted=cities.sort();
+document.write(sorted+"<br>")
+
+document.write(cities+"<br>")
+
+document.write(cities.join()+"<br>")
+document.write(cities.join("")+"<br>")
+document.write(cities.join("-")+"<br>")
+document.write(cities.join(",")+"<br>")
+
+
+var mymarks=[23,4,5,78,12,89,23,19]
+
+document.write(mymarks.sort()+"<br>");
+
+document.write(mymarks.sort(
+    function(a,b)
+    {
+        return a-b
+    }
+)+"<br>");
+
+</script>
+</body>
+</html>

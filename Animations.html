@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .tech{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: keerthi;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+            animation-direction: reverse;
+      
+        }
+        
+        @keyframes keerthi {
+            0%{
+                width:100px;
+                height:100px;
+                background-color: blueviolet;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                animation-timing-function: ease;
+            }
+            25%{
+                width:100px;
+                height:100px;
+                background-color: rgb(43, 226, 131);
+                position: absolute;
+                left: 500px;
+                top: 0px;
+                animation-timing-function: ease-in;
+            }
+            50%{
+                width:100px;
+                height:100px;
+                background-color: rgb(43, 226, 131);
+                position: absolute;
+                left: 500px;
+                top: 500px;
+                border-radius: 50%;
+                animation-timing-function: ease-out;
+            }
+            75%{
+                width:100px;
+                height:100px;
+                background-color: rgb(226, 43, 144);
+                position: absolute;
+                left: 0px;
+                top: 500px;
+                animation-timing-function: ease-in-out;
+            }
+            100%{
+                width:100px;
+                height:100px;
+                background-color: rgb(193, 229, 110);
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                animation-timing-function: ease-in;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="tech"></div>
+</body>
+</html>
